@@ -9,10 +9,10 @@ s3.setKey(AWS_KEY)
 
 const BUCKET = 'my-s3-bucket'
 
-function extract(filename, buffer){
-  if(path.extname(filename) === 'zip'){
+function extract (filename, buffer) {
+  if (path.extname(filename) === 'zip') {
     return unzip(buffer)
-  }else{
+  } else {
     return bytes
   }
 }
