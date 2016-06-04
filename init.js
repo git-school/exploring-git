@@ -12,14 +12,14 @@ const BUCKET = 'my-s3-bucket'
 
 
 function extract (filename, buffer) {
-  if (path.extname(filename) === 'zip') {
-    return unzip(buffer)
-  } else {
-    return bytes
-  }
+    if (path.extname(filename) === 'zip') {
+        return unzip(buffer)
+    } else {
+        return bytes
+    }
 }
 
 function upload (filename, targetName) {
-  const bytes = extract(filenane, fs.readFileSync(filename))
-  s3.putObject(BUCKET, filename, targetName)
+    const bytes = extract(filenane, fs.readFileSync(filename))
+    s3.putObject(BUCKET, filename, targetName)
 }
