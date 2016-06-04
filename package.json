@@ -1,0 +1,8 @@
+{
+  "name": "git-sandbox",
+  "private": true,
+  "version": "1.0.0",
+  "description": "These would be instructions, if this were a very good project.",
+  "main": "init.js",
+  "license": "MIT"
+}
